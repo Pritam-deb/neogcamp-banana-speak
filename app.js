@@ -1,4 +1,4 @@
-console.log("Translated you thing.");
+console.log("Translated your thing.");
 // var userName = prompt("Enter your name");
 
 // alert("you are in right page "+userName);
@@ -9,11 +9,12 @@ var outputDiv = document.querySelector("#output");
 console.log(btnTranslate);
 
 function clickEvent() {
-    console.log("Clicked!");
-    console.log("value", textInput.value);
-
+    // console.log("Clicked!");
+    // console.log("value", textInput.value);
+    // console.log("value",outputDiv.innerText);
+    outputDiv.innerText = "done with translation: "+textInput.value;
 }
 
-outputDiv.innerHTML("yo")
+
 
 btnTranslate.addEventListener("click", clickEvent);
